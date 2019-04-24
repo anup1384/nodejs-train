@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: train-deployment
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: train
+    spec:
+      containers:
+      - name: train-deployment
+        image: anuphnu/nodejsanup:v1
+        ports:
+        - name: nodejs-port
+          containerPort: 3000
