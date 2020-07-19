@@ -9,4 +9,4 @@ spec:
     protocol: TCP
   selector:
     app: train
-  type: LoadBalancer
+  type: ClusterIP
