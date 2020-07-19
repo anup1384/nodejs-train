@@ -4,7 +4,8 @@ metadata:
   name: train-deployment
 spec:
   selector:
-    app: train
+    matchLabels:
+      app: train
   replicas: 3
   template:
     metadata:
