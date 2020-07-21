@@ -1,4 +1,4 @@
 resources:
 - train-deployment.yml
 - train-ingress.yaml
-- train-service.yaml
+- train-service.yml
