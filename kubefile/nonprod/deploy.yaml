@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: train-deployment
+spec:
+  selector:
+    matchLabels:
+      app: train
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: train
+    spec:
+      containers:
+      - name: train-deployment
+        image: anuphnu/nodejsanup:v4
+        ports:
+        - name: nodejs-port
+          containerPort: 3000
