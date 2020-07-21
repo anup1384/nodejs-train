@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: train-deployment
-        image: anuphnu/nodejsanup:v4
+        image: anuphnu/nodejsanup:v1
         ports:
         - name: nodejs-port
           containerPort: 3000
